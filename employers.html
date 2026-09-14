@@ -1,89 +1,124 @@
 <!DOCTYPE html>
-<html>
- 
+<html lang="en">
 <head>
-<title>Employers - Talash AI</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employer Portal - Talash AI Recruiter</title>
 
  <style>
-body {
-background-color: #08122d;
-color: white;
+body{
 font-family: Arial, sans-serif;
-text-align: center;
-padding: 40px;
+margin:0;
+background:#f4f7fc;
 }
 
-h1, h2 {
-color: white;
+ header{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
 }
 
- 
-ul {
-list-style-position: inside;
-}
-a {
-color: #60a5fa;
-}
-
-input {
-padding: 10px;
-width: 250px;
-border-radius: 5px;
-border: none;
+.container{
+max-width:900px;
+margin:40px auto;
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-button {
-background-color: #3b82f6;
-color: white;
-border: none;
-padding: 12px 24px;
-margin: 10px;
-border-radius: 8px;
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+width:350px;
 }
- 
-button:hover {
-background-color: #2563eb;
+
+ h2{
+text-align:center;
+color:#0f172a;
+}
+
+ input{
+width:100%;
+padding:12px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:16px;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+.home-btn{
+display:inline-block;
+margin-top:20px;
+background:#10b981;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.home-btn:hover{
+background:#059669;
 }
 </style>
 
- </head>
+</head>
 
  <body>
 
- <h1>For Employers</h1>
+ <header>
+<h1>Employer Portal</h1>
+<p>Recruiter Login & Registration</p>
 
- <h2>Employer Login</h2>
+ <a href="index.html" class="homeiv class="container">
+
+ <div class="card">
+<h2>Recruiter Login</h2>
 
  <form>
-<label>User ID</label><br><br>
-<input type="text" placeholder="Enter User ID"><br><br>
+<input type="email" placeholder="Email Address" required>
 
- <label>Password</label><br><br>
-<input type="password" placeholder="Enter Password"><br><br>
+<input type="password" placeholder="Password" required>
 
  <button type="submit">Login</button>
 </form>
+</div>
 
-<h2>New Employer?</h2>
+ <div class="card">
+<h2>Recruiter Register</h2>
 
- <button>Register</button>
+ <form>
+<input type="text" placeholder="Company Name" required>
 
-<h2>Employer Services</h2>
+ <input type="text" placeholder="Recruiter Name" required>
 
- <ul>
-<li>Post a Job</li>
-<li>Search Candidates</li>
-<li>Recruitment Consulting</li>
-<li>AI Hiring Assistance</li>
-</ul>
+ <input type="email" placeholder="Email Address" required>
 
- <br>
+<input type="password" placeholder="Create Password" required>
 
-<a href="index.html">Back to Home</a>
+ <button type="submit">Register</button>
+</form>
+</div>
+
+ </div>
 
  </body>
-
- </html>
+</html>
