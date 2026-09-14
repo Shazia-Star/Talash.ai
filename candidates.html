@@ -1,89 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidate Portal - Talash AI Recruiter</title>
 
- <head>
-<title>Candidates - Talash AI</title>
-
- <style>
-body {
-background-color: #08122d;
-color: white;
-font-family: Arial, sans-serif;
-text-align: center;
-padding: 40px;
+<style>
+  
+  body{
+font-family:Arial,sans-serif;
+background:#f4f7fb;
+padding:50px;
 }
 
- h1, h2 {
-color: white;
+.container{
+background:white;
+max-width:400px;
+margin:auto;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
- ul {
-list-style-position: inside;
+h1{
+color:#2563eb;
 }
 
- a {
-color: #60a5fa;
+ input{
+width:90%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
 }
 
- input {
-padding: 10px;
-width: 250px;
-border-radius: 5px;
-border: none;
+.btn{
+background:#2563eb;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+text-decoration:none;
+display:inline-block;
+margin-top:10px;
 }
 
-button {
-background-color: #3b82f6;
-color: white;
-border: none;
-padding: 12px 24px;
-margin: 10px;
-border-radius: 8px;
-font-size: 16px;
-font-weight: bold;
-cursor: pointer;
+.btn:hover{
+background:#1e40af;
 }
 
- button:hover {
-background-color: #2563eb;
-}
 </style>
 
- </head>
+</head>
 
  <body>
 
- <h1>For Candidates</h1>
+<div class="container">
 
- <h2>Candidate Login</h2>
+<h1>Candidate Login</h1>
 
- <form>
-<label>User ID</label><br><br>
-<input type="text" placeholder="Enter User ID"><br><br>
+<input type="email" placeholder="Email Address">
 
- <label>Password</label><br><br>
-<input type="password" placeholder="Enter Password"><br><br>
+ <input type="password" placeholder="Password">
 
- <button type="submit">Login</button>
-</form>
+ <br>
 
- <h2>New Candidate?</h2>
+<button class="btn">Login</button>
 
- <button>Register</button>
+ <br><br>
 
- <h2>Candidate Services</h2>
+ <a href="register.html" class="btn">Register</a>
 
- 
-<ul>
-<li>Upload Resume</li>
-<li>Search Jobs</li>
-<li>Career Guidance</li>
-<li>Interview Preparation</li>
-</ul>
-<br>
-
- <a href="index.html">Back to Home</a>
+ </div>
 
  </body>
-
 </html>
